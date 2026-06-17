@@ -3,9 +3,9 @@
 #include <HTTPClient.h>
 #include <Update.h>
 
-#define VERSION_URL "https://raw.githubusercontent.com/jhonoresulca/OTA_Basico_GitHUB/master/ota/version.txt"
-#define FIRMWARE_URL "https://raw.githubusercontent.com/jhonoresulca/OTA_Basico_GitHUB/master/ota/firmware.bin"
-#define CURRENT_VERSION "1.0"
+#define VERSION_URL "https://raw.githubusercontent.com/jhonoresulca/GitHub_Bin_ESP32/master/ota/version.txt"
+#define FIRMWARE_URL "https://raw.githubusercontent.com/jhonoresulca/GitHub_Bin_ESP32/master/ota/firmware.bin"
+#define CURRENT_VERSION "1.1"
 
 unsigned long lastCheck = 0;
 
@@ -97,11 +97,11 @@ void loop() {
     // LED
     digitalWrite(2, HIGH);
     Serial.println("LED ON");
-    delay(100);
+    delay(2000);
     
     digitalWrite(2, LOW);
     Serial.println("LED OFF");
-    delay(100);
+    delay(2000);
     
     // Consultar cada 10 segundos
     if (millis() - lastCheck > 10000) {
