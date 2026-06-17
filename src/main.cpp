@@ -5,7 +5,7 @@
 
 #define VERSION_URL "https://raw.githubusercontent.com/jhonoresulca/GitHub_Bin_ESP32/master/ota/version.txt"
 #define FIRMWARE_URL "https://raw.githubusercontent.com/jhonoresulca/GitHub_Bin_ESP32/master/ota/firmware.bin"
-#define CURRENT_VERSION "1.1"
+#define CURRENT_VERSION "1.2"
 
 unsigned long lastCheck = 0;
 
@@ -97,11 +97,11 @@ void loop() {
     // LED
     digitalWrite(2, HIGH);
     Serial.println("LED ON");
-    delay(2000);
+    delay(100);
     
     digitalWrite(2, LOW);
     Serial.println("LED OFF");
-    delay(2000);
+    delay(100);
     
     // Consultar cada 10 segundos
     if (millis() - lastCheck > 10000) {
