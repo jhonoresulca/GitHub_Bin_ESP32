@@ -97,11 +97,11 @@ void loop() {
     // LED
     digitalWrite(2, HIGH);
     Serial.println("LED ON");
-    delay(100);
+    delay(1000);
     
     digitalWrite(2, LOW);
     Serial.println("LED OFF");
-    delay(100);
+    delay(1000);
     
     // Consultar cada 10 segundos
     if (millis() - lastCheck > 10000) {
