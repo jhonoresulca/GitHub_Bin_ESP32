@@ -5,7 +5,7 @@
 
 #define VERSION_URL "https://raw.githubusercontent.com/jhonoresulca/GitHub_Bin_ESP32/master/ota/version.txt"
 #define FIRMWARE_URL "https://raw.githubusercontent.com/jhonoresulca/GitHub_Bin_ESP32/master/ota/firmware.bin"
-#define CURRENT_VERSION "1.2"
+#define CURRENT_VERSION "1.0"
 
 unsigned long lastCheck = 0;
 
