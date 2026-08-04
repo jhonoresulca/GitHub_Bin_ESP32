@@ -81,7 +81,7 @@ void setup() {
     
     Serial.println("\n=== OTA desde GitHub ===");
     
-    WiFi.begin("Jhon_Ore2", "123456789");
+    WiFi.begin("AMERICANET_FC4D00", "jhonfernando2019");
     int attempts = 0;
     while (WiFi.status() != WL_CONNECTED && attempts < 20) {
         delay(500);
@@ -97,11 +97,11 @@ void loop() {
     // LED
     digitalWrite(2, HIGH);
     Serial.println("LED ON");
-    delay(1000);
+    delay(100);
     
     digitalWrite(2, LOW);
     Serial.println("LED OFF");
-    delay(1000);
+    delay(100);
     
     // Consultar cada 10 segundos
     if (millis() - lastCheck > 10000) {
